@@ -27,19 +27,12 @@ namespace POMExample.PageObjects
 
         public void goToPage()
         {
-            driver.Navigate().GoToUrl("https://open.spotify.com/");
+            driver.Navigate().GoToUrl("https://testinstance.ayudalabs.com/Juice/#DigitalAvails");
         }
 
         public void goToLogInPage()
         {
             driver.FindElement(By.CssSelector("#main > div > div.Root__top-container > div.Root__top-bar > header > div:nth-child(5) > button._3f37264be67c8f40fa9f76449afdb4bd-scss._1f2f8feb807c94d2a0a7737b433e19a8-scss")).Click();
         }
-
-        public AboutPage goToAboutPage()
-        {
-            about.Click();
-            return new AboutPage(driver);
-        }        
-        
     }
 }
