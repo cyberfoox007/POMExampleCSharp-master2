@@ -9,6 +9,7 @@ namespace POMExample.Data
     public class DataInput
     {
         public static string billingAmout = "1000";
+        public static string TestString = "testString";
 
         public static string endDate = "06/06/2021";
         public static string endDate_v2 = "6/6/2021";
